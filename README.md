@@ -20,3 +20,6 @@ This example uses GitHub Actions to build and deploy the example to GitHub Pages
 - [CD.yml](.github/workflows/CD.yml): Builds the example and deploys it to GitHub Pages.
 
 Referenced (plippe)[https://plippe.github.io/blog/2021/07/12/rust-wasm-github.html] as a guide for setting up CI/CD.
+
+Note: In order to deploy to GitHub Pages, you must create a GitHub token and add it to the repository secrets.
+The Build command must have the `--public-url /${{ github.event.repository.name }}` flag set so the assets are loaded.
