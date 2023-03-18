@@ -12,3 +12,11 @@ trunk serve
 
 ## Access from Web
 To access this example from the web, open the following URL in your browser:
+https://jredrupp.github.io/yew-example/
+
+## CI / CD
+This example uses GitHub Actions to build and deploy the example to GitHub Pages. The following files are used:
+- [CI.yml](.github/workflows/CI.yml): Builds the example and runs tests.
+- [CD.yml](.github/workflows/CD.yml): Builds the example and deploys it to GitHub Pages.
+
+Referenced (plippe)[https://plippe.github.io/blog/2021/07/12/rust-wasm-github.html] as a guide for setting up CI/CD.
